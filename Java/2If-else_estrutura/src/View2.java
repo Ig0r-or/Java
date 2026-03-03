@@ -1,5 +1,5 @@
 public class View2 {
-    //Aqui eu volto pro básico declarando alguns tipos primitivos do Java, mas claro, com o adendo que eles são declarados em classes por metodos e retornados a Main principal
+    //Aqui eu aprimoro o primeiro código por validações if e else declarados em classes por metodos e retornados a Main principal
     public static void main(String[] args) throws Exception {
         View2 v = new View2();
         int resultadoInt = v.DosInts();
