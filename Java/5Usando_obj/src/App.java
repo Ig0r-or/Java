@@ -9,10 +9,8 @@ public class App{
             "11409624716",
             ""
         );
-
-        p1.Apresentar();
-
         p1.atualizarContado();
+        p1.atualizarNome();
 
     }
 } 

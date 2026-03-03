@@ -20,6 +20,20 @@ public class Paciente {
         System.out.println("Olá meu nome é " + nome + "!");
     }
 
+
+    public void atualizarNome(){
+        Scanner scanner = new Scanner(System.in);
+
+        if(nome == null || nome.isEmpty()){
+            System.out.println("Digite um nome: ");
+            String nome = scanner.nextLine();
+            System.out.println("Nome cadastrado: " + nome);
+        }
+        else{
+            System.out.println("Nome já cadastrado: " + nome);
+        }
+    }
+
     public void atualizarContado(){
         Scanner scanner = new Scanner(System.in);
 
