@@ -1,7 +1,7 @@
 public class Usuario {
-    int idUsuario;
-    String nome;
-    String idade;
+    private int idUsuario;
+    private String nome;
+    private String idade;
 
     public Usuario(int idUsuario, String nome, String idade){
         this.idUsuario = idUsuario;
@@ -12,4 +12,28 @@ public class Usuario {
     void Apresentar(){
         System.out.println("Olá meu nome é " + nome);
     }
+
+    public int getIdUsuario(){
+        return idUsuario;
+    }
+
+    public void setIdUsuario(int idUsuario){
+        this.idUsuario = idUsuario;
+    }
+
+     public String getNome(){
+        return nome;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+     public String getIdade(){
+        return idade;
+    }
+
+    public void setIdade(String idade){
+        this.idade = idade;
+    }    
 }

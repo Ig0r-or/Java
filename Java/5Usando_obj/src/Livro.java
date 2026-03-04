@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 
 public class Livro {
-    int idLivro;
-    String titulo;
-    String autor;
-    String status;
+    private int idLivro;
+    private String titulo;
+    private String autor;
+    private String status;
 
     public Livro(int idLivro, String titulo, String autor, String status){
         this.idLivro = idLivro;
@@ -14,11 +14,38 @@ public class Livro {
         this.status = status;
     }
 
-    public void atualizarStatus(){
-        Scanner scanner = new Scanner(System.in);
-
-        if(status == null || status.isEmpty()){
-            System.out.println("Livro indisponível!");
-        }
+    public int getIdLivro(){
+        return idLivro;
     }
+
+    public void setIdLivro(int idLivro){
+        this.idLivro = idLivro;
+    }
+
+    public String getTitulo(){
+        return titulo;
+    }
+
+    public void setTitulo( String titulo){
+        this.titulo = titulo;
+    }
+
+     public String getAutor(){
+        return autor;
+    }
+
+    public void setAutor( String autor){
+        this.autor = autor;
+    }
+
+     public String getStatus(){
+        return status;
+    }
+
+    public void setStatus( String status){
+        this.status = status;
+    }
+
+    
+
 }
