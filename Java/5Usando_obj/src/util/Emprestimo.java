@@ -1,23 +1,19 @@
-import java.util.Data;
-
-
 public class Emprestimo {
     private int idEmprestimo;
-    private Date dataEmprestimo;
+    private String dataEmprestimo;
     private String hora;
     private Usuario usuario;
     private Livro livro;
     private String status;
 
-    public Emprestimo(int idEmprestimo, String hora, String data, String status){
+    public Emprestimo(int idEmprestimo, String hora, String dataEmprestimo, String status, Livro l, Usuario u){
         this.idEmprestimo = idEmprestimo;
         this.hora = hora;
-        this.data = dataEmprestimo;
+        this.dataEmprestimo = dataEmprestimo;
         this.status = status;
         this.usuario = u;
         this.livro = l;
     }
-
 
     public int getIdEmprestimo(){
         return idEmprestimo;
@@ -27,7 +23,7 @@ public class Emprestimo {
         this.idEmprestimo = idEmprestimo;
     }
 
-    public Date getDataEmprestimo(){
+    public String getDataEmprestimo(){
         return dataEmprestimo;
     }
 
