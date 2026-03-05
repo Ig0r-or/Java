@@ -9,10 +9,6 @@ public class Usuario {
         this.idade = idade;
     }
 
-    void Apresentar(){
-        System.out.println("Olá meu nome é " + nome);
-    }
-
     public int getIdUsuario(){
         return idUsuario;
     }

@@ -1,6 +1,3 @@
-import java.util.Scanner;
-
-
 public class Livro {
     private int idLivro;
     private String titulo;
