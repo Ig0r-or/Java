@@ -1,12 +1,18 @@
+import java.util.Date;
+
+
 public class Usuario {
     private int idUsuario;
     private String nome;
     private String idade;
+    private Date dataNascimento;
 
-    public Usuario(int idUsuario, String nome, String idade){
+
+    public Usuario(int idUsuario, String nome, String idade, Date dataNascimento){
         this.idUsuario = idUsuario;
         this.nome = nome;
         this.idade = idade;
+        this.dataNascimento = dataNascimento;
     }
 
     public int getIdUsuario(){
@@ -32,4 +38,14 @@ public class Usuario {
     public void setIdade(String idade){
         this.idade = idade;
     }    
+
+    public Date getDataNascimento(){
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento){
+        this.dataNascimento = dataNascimento;
+    }
+
+    
 }
