@@ -1,3 +1,5 @@
+package Java.lista_ligada_v1.src;
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("--- INICIANDO TESTES: LISTA DINÂMICA (HEAP) ---");

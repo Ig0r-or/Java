@@ -1,3 +1,5 @@
+package Java.lista_ligada_v1.src;
+
 public class ListaLigadaDinamica {
     private No inicio; // O famoso "Head". É a nossa única porta de entrada para a lista.
 

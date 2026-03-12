@@ -1,3 +1,5 @@
+package Java.lista_ligada_v1.src;
+
 public class No {
     int dado;
     No proximo; // Aponta para o próximo objeto No no Heap (ou null se for o último)
