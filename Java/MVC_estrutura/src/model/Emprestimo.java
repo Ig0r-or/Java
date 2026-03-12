@@ -1,4 +1,5 @@
 package model;
+
 public class Emprestimo {
     private int idEmprestimo;
     private String dataEmprestimo;
