@@ -4,5 +4,6 @@
         "Java/5Usando_obj/src/util",
         "Java/5Usando_obj/src",
         ""
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
