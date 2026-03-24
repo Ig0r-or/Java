@@ -12,6 +12,8 @@ public class Biblioteca {
     private String endereco;
     private String telefone;
     private List<Emprestimo> emprestimos;
+    private List<Usuario> usuarios;
+    private List<Livro> livros;
 
 
     
@@ -21,9 +23,18 @@ public class Biblioteca {
         this.endereco = endereco;
         this.telefone = telefone;
         this.emprestimos = new ArrayList<>();
+        this.usuarios = new ArrayList<>();
+        this.livros = new ArrayList<>();
+    }
+
+    public void cadastrarLivro(int idLivro, String titulo, String autor, String status){
+        Livro livro = new Livro(idLivro, titulo, autor, status);
+        livros.add(livro);
+        System.out.println("Livro cadastrado: " + livro.getTitulo());
     }
 
     public void registrarEmprestimo(Usuario u, Livro l){
+        
         Emprestimo e = new Emprestimo(idBiblioteca, telefone, nomeBiblioteca, endereco, l, u);
         emprestimos.add(e);
         System.out.println("Empréstimo registrado: " + u.getNome() + " pegou " + l.getTitulo());
