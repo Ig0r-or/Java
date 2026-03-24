@@ -27,6 +27,12 @@ public class Biblioteca {
         this.livros = new ArrayList<>();
     }
 
+    public void cadastrarUsuario(int idUsuario, String nome, String idade, String dataNascimento){
+        Usuario usuario = new Usuario(idUsuario, nome, idade, dataNascimento);
+        usuarios.add(usuario);
+        System.out.println("Usuario cadastrado: " + usuario.getIdUsuario());
+    }
+
     public void cadastrarLivro(int idLivro, String titulo, String autor, String status){
         Livro livro = new Livro(idLivro, titulo, autor, status);
         livros.add(livro);
@@ -43,7 +49,6 @@ public class Biblioteca {
     public List<Emprestimo> getEmprestimos(){
         return emprestimos;
     }
-
 
 
     
